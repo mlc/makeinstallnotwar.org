@@ -15,32 +15,27 @@
         text-align: left;
         font-size: 60pt;
         font-weight: 400;
+        display: inline-block;
+        border-right: 30px solid;
+        animation: 1060ms ease infinite blinky;
+        margin-bottom: 0px;
+      }
+      @keyframes blinky {
+        0%   { border-right-color: transparent; }
+        20%  { border-right-color: transparent; }
+        40%  { border-right-color: green; }
+        70%  { border-right-color: green; }
+        100% { border-right-color: transparent; }
+        90%  { border-right-color: transparent; }
       }
       a { color: inherit }
       h1 a { text-decoration: none }
       p { font-family: 'Munro', monospace; font-size: 20pt; }
       body { background-color: black; color: green }
-      .invisible { color: black; }
     </style>
   </head>
   <body>
-    <h1><a href="http://www.fas.org/sgp/crs/natsec/RL33110.pdf">$</a> <a href="http://www.gnu.org/software/make/">make</a> <a href="http://www.debian.org/">install</a> <a href="https://www.youtube.com/watch?v=NbuUW9i-mHs">not war</a><span id="cursor">_</span></h1>
+    <h1><a href="http://www.fas.org/sgp/crs/natsec/RL33110.pdf">$</a> <a href="http://www.gnu.org/software/make/">make</a> <a href="http://www.debian.org/">install</a> <a href="https://www.youtube.com/watch?v=NbuUW9i-mHs">not war</a></h1>
     <p>maybe one day this site will have content.</p>
-    <script type="text/javascript">
-    (function(document, window) {
-      var init = function() {
-        var cursor = document.getElementById("cursor"), state = true;
-        window.setInterval(function() {
-          state = !state;
-          cursor.classList[state ? 'remove' : 'add']('invisible');
-        }, 530);
-      };
-      if (document.readyState === 'loading') {
-        document.addEventListener("DOMContentLoaded", init);
-      } else {
-        init();
-      }
-    })(this.document, this);
-    </script>
   </body>
 </html>
