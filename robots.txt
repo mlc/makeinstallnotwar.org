@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Disallow: /trap
+Disallow: /vid
+
+User-agent: NPBot
+Disallow: /
+
+User-Agent: sitecheck.internetseer.com
+Disallow: /
+
+User-Agent: TurnitinBot
+Disallow: /
+
+User-Agent: SurveyBot
+Disallow: /
